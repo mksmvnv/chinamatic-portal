@@ -5,12 +5,12 @@ Home
 {% endblock title %}
 
 {% block content %}
-<h1>Home page</h1>
+<h1>Posts</h1>
 <ul>
     {% for post in posts %}
-    <h2>{{ post.title }}</h2>
+    <li><h2>{{ post.title }}</h2></li>
     <p>{{ post.description }}</p>
-    <li><a href="{% url 'post' post.id %}">Читать пост</a></li>
+    <a href="{% url 'post' post.id %}">Читать пост</a>
     {% endfor %}
 </ul>
 {% endblock content %}

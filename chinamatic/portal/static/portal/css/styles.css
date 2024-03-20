@@ -1,0 +1,33 @@
+/* Crated by @mksmvnv */
+
+@import "./reset.css";
+@import url("https://bit.ly/3vkEbno");
+
+/*
+font-family: "Outfit", sans-serif;
+font-family: "Source Code Pro", monospace;
+*/
+
+:root {
+    --blackpure: #000;
+    --black: #171718;
+    --black-border: #26292D;
+    --white: #fff;
+    --purple: #5C62EC;
+
+    --text-color: var(--black);
+}
+
+html, body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    font-family: "Outfit", sans-serif;
+}
+
+/* General */
+
+
+/* Nav */
+
