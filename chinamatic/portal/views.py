@@ -14,11 +14,11 @@ def index(request):
     context = {
         'posts': db_post,
     }
-    return render(request, 'index.html', context)
+    return render(request, './portal/index.html', context)
 
 
 def post(request, post_id):
     context = {
         'post_id': post_id,
     }
-    return render(request, 'post.html', context)
+    return render(request, './portal/post.html', context)
