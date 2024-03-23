@@ -1,33 +1,34 @@
 /* Crated by @mksmvnv */
 
 @import "./reset.css";
-@import url("https://bit.ly/3vkEbno");
+@import url("https://clck.ru/39cgLX");
 
 /*
-font-family: "Outfit", sans-serif;
-font-family: "Source Code Pro", monospace;
+font-family: "Fira Code", monospace;
 */
 
 :root {
-    --blackpure: #000;
-    --black: #171718;
-    --black-border: #26292D;
-    --white: #fff;
-    --purple: #5C62EC;
-
-    --text-color: var(--black);
+    --bg: #171919;
+    --text: #ffffff;
 }
 
 html, body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    font-family: "Fira Code", monospace;
+    font-weight: 400;
 
-    font-family: "Outfit", sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
 }
 
-/* General */
-
-
 /* Nav */
+
+.nav {
+    margin: auto;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
 

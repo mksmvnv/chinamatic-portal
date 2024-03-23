@@ -1,7 +1,11 @@
+<!-- Created by @mksmvnv -->
+
+{% load static %}
 <nav class="nav">
-  <div class="container">
-    <a href="{% url 'home' %}"><img src="../portal/static/portal/assets/logo.png" alt="Logo" /></a>
+  <div>
+    <a href="{% url 'home' %}"><img src="{% static './portal/assets/logo.png' %}" alt="logo"></a>
+    <a href="#">Поиск</a>
+    <a href="{% url 'editor' %}">Написать пост</a>
     <a href="#">Войти</a>
-    <a href="#">Регистрация</a>
   </div>
 </nav>
