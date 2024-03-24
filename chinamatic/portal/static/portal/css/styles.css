@@ -1,34 +1,163 @@
-/* Crated by @mksmvnv */
+/* Created by @mksmvnv */
 
-@import "./reset.css";
-@import url("https://clck.ru/39cgLX");
+@import url("https://clck.ru/39dsjt");
 
 /*
+font-family: "Space Grotesk", sans-serif;
 font-family: "Fira Code", monospace;
 */
 
 :root {
     --bg: #171919;
+    --bg-light: #1f2020;
     --text: #ffffff;
+    --text-dark: #606060;
+    --border: #2a2c2c;
+    --additional: #de2812;
 }
 
 html, body {
+    width: 100%;
+    min-width: 100vh;
+
     font-family: "Fira Code", monospace;
     font-weight: 400;
+    font-size: 20px;
 
     background-color: var(--bg);
     color: var(--text);
 }
 
-/* Nav */
+/* GENERAL */
 
-.nav {
-    margin: auto;
-    padding: 20px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
 }
 
-.container {
+/* NAVBAR */
+
+.navbar {
+    width: 100%;
+}
+
+.navbar .container {
+    width: 100%;
     display: flex;
     align-items: center;
+    padding: 20px 20px;
+    border-bottom: 1px solid var(--border);
 }
+
+.navbar .container .navbar-logo {
+    display: flex;
+    width: 290px;
+    height: 55px;
+    align-items: center;
+}
+
+.navbar .container .navbar-logo .navbar-logo__img {
+    width: 55px;
+    height: 55px;
+}
+
+.navbar .container .navbar-logo .navbar-logo__text {
+    margin-left: 15px;
+
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--text);
+}
+
+.navbar .container .navbar-search .navbar-search__input {
+    margin-left: 72px;
+
+    width: 290px;
+    height: 60px;
+    border-radius: 15px;
+    padding: 18px 150px 18px 25px;
+
+    font-family: "Fira Code", monospace;
+    font-weight: 400;
+    font-size: 18px;
+
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+.navbar .container .navbar-search .navbar-search__icon {
+    position: absolute;
+    top: 40px;
+    left: 630px;
+}
+
+.navbar .container .navbar-search .navbar-search__icon img {
+    width: 20px;
+    height: 22px;
+}
+
+.navbar .container .navbar-editor {
+    margin-left: 800px;
+}
+
+.navbar .container .navbar-editor .navbar-editor__btn {
+    width: 200px;
+    height: 60px;
+    border-radius: 15px;
+
+    cursor: pointer;
+
+    background-color: var(--additional); 
+}
+
+.navbar .container .navbar-editor .navbar-editor__btn p {
+    font-family: "Fira Code", monospace;
+    font-weight: 500;
+    font-size: 18px;
+
+    margin: 18px 30px 18px 29px;
+
+    color: var(--text);
+}
+
+.navbar .container .navbar-notifications {
+    margin-left: 42px;
+}
+
+.navbar .container .navbar-notifications img {
+    width: 20px;
+    height: 22px;
+}
+
+.navbar .container .navbar-profile {
+    margin-left: 42px;
+}
+
+.navbar .container .navbar-profile img {
+    width: 20px;
+    height: 22px;
+}
+
+.navbar .container .navbar-profile .navbar-profile__link {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.navbar .container .navbar-profile .navbar-profile__icon {
+    margin-right: 10px;
+}
+
+.navbar .container .navbar-profile .navbar-profile__text {
+    color: var(--text-dark);
+}
+
+
+
+
 

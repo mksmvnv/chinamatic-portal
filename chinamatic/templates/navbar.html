@@ -1,11 +1,35 @@
 <!-- Created by @mksmvnv -->
 
 {% load static %}
-<nav class="nav">
-  <div>
-    <a href="{% url 'home' %}"><img src="{% static './portal/assets/logo.png' %}" alt="logo"></a>
-    <a href="#">Поиск</a>
-    <a href="{% url 'editor' %}">Написать пост</a>
-    <a href="#">Войти</a>
+<div class="navbar">
+  <div class="container">
+    <div class="navbar-logo">
+      <a href="{% url 'home' %}" class="navbar-logo__img">
+        <img src="{% static './portal/assets/logo.png' %}" alt="logo" />
+        <p class="navbar-logo__text">Chinamatic</p>
+      </a>
+    </div>
+    <div class="navbar-search">
+      <input type="text" placeholder="Поиск 搜尋" class="navbar-search__input" />
+      <div class="navbar-search__icon">
+        <img src="{% static './portal/assets/icons/search.svg' %}" alt="search" />
+      </div>
+    </div>
+    <div class="navbar-editor">
+      <a href="{% url 'editor' %}">
+        <button class="navbar-editor__btn">
+          <p>Написать пост</p>
+        </button>
+      </a>
+    </div>
+    <div class="navbar-notifications">
+      <a href="#"><img src="{% static './portal/assets/icons/notifications.svg' %}" alt="notifications" /></a>
+    </div>
+    <div class="navbar-profile">
+      <a href="#" class="navbar-profile__link">
+        <img src="{% static './portal/assets/icons/profile.svg' %}" alt="profile" class="navbar-profile__icon" />
+        <p class="navbar-profile__text">Войти</p>
+      </a>
+    </div>
   </div>
-</nav>
+</div>
