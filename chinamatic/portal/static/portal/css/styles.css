@@ -1,10 +1,10 @@
 /* Created by @mksmvnv */
 
-@import url("https://clck.ru/39dsjt");
+@import url("https://clck.ru/39fL4k");
 
 /*
-font-family: "Space Grotesk", sans-serif;
-font-family: "Fira Code", monospace;
+font-family: "Montserrat Alternates", sans-serif;
+font-family: "Alegreya Sans SC", sans-serif;
 */
 
 :root {
@@ -20,8 +20,8 @@ html, body {
     width: 100%;
     min-width: 100vh;
 
-    font-family: "Fira Code", monospace;
-    font-weight: 400;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 500;
     font-size: 20px;
 
     background-color: var(--bg);
@@ -39,7 +39,7 @@ html, body {
     border: none;
 }
 
-/* NAVBAR */
+/* NAVBAR Main */
 
 .navbar {
     width: 100%;
@@ -49,15 +49,18 @@ html, body {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 20px 20px;
+    padding: 20px 60px;
     border-bottom: 1px solid var(--border);
 }
 
-.navbar .container .navbar-logo {
+/* NAVBAR Logo */
+
+.navbar .container .navbar-logo .navbar-logo__link {
     display: flex;
-    width: 290px;
-    height: 55px;
     align-items: center;
+
+    width: 300px;
+    height: 55px;
 }
 
 .navbar .container .navbar-logo .navbar-logo__img {
@@ -68,23 +71,26 @@ html, body {
 .navbar .container .navbar-logo .navbar-logo__text {
     margin-left: 15px;
 
-    font-family: "Space Grotesk", sans-serif;
-    font-weight: 700;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 600;
     font-size: 40px;
     color: var(--text);
 }
 
+/* NAVBAR Search */
+
 .navbar .container .navbar-search .navbar-search__input {
-    margin-left: 72px;
+    margin-left: 52px;
 
     width: 290px;
     height: 60px;
+
     border-radius: 15px;
     padding: 18px 150px 18px 25px;
 
-    font-family: "Fira Code", monospace;
-    font-weight: 400;
-    font-size: 18px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
 
     background-color: var(--bg-light);
     color: var(--text-dark);
@@ -92,55 +98,52 @@ html, body {
 
 .navbar .container .navbar-search .navbar-search__icon {
     position: absolute;
-    top: 40px;
-    left: 630px;
+    top: 38px;
+    left: 655px;
 }
 
-.navbar .container .navbar-search .navbar-search__icon img {
-    width: 20px;
-    height: 22px;
-}
+/* NAVBAR Editor */
 
 .navbar .container .navbar-editor {
-    margin-left: 800px;
+    margin-left: 720px;
 }
 
 .navbar .container .navbar-editor .navbar-editor__btn {
-    width: 200px;
+    width: 220px;
     height: 60px;
-    border-radius: 15px;
 
+    border-radius: 15px;
     cursor: pointer;
 
     background-color: var(--additional); 
 }
 
 .navbar .container .navbar-editor .navbar-editor__btn p {
-    font-family: "Fira Code", monospace;
-    font-weight: 500;
-    font-size: 18px;
+    margin: 16px 26px 18px 26px;
 
-    margin: 18px 30px 18px 29px;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 500;
+    font-size: 25px;
 
     color: var(--text);
 }
+
+/* NAVBAR Notifications */
 
 .navbar .container .navbar-notifications {
     margin-left: 42px;
 }
 
-.navbar .container .navbar-notifications img {
-    width: 20px;
-    height: 22px;
+.navbar .container .navbar-notifications__link {
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
 }
+
+/* NAVBAR Profile */
 
 .navbar .container .navbar-profile {
-    margin-left: 42px;
-}
-
-.navbar .container .navbar-profile img {
-    width: 20px;
-    height: 22px;
+    margin-left: 32px;
 }
 
 .navbar .container .navbar-profile .navbar-profile__link {
@@ -150,7 +153,7 @@ html, body {
 }
 
 .navbar .container .navbar-profile .navbar-profile__icon {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .navbar .container .navbar-profile .navbar-profile__text {
