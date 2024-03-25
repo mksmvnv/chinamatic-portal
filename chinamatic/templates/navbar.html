@@ -4,13 +4,13 @@
 <div class="navbar">
   <div class="container">
     <div class="navbar-logo">
-      <a href="{% url 'home' %}" class="navbar-logo__img">
+      <a href="{% url 'home' %}" class="navbar-logo__link">
         <img src="{% static './portal/assets/logo.png' %}" alt="logo" />
         <p class="navbar-logo__text">Chinamatic</p>
       </a>
     </div>
     <div class="navbar-search">
-      <input type="text" placeholder="Поиск 搜尋" class="navbar-search__input" />
+      <input type="text" placeholder="Поиск  搜尋" class="navbar-search__input" />
       <div class="navbar-search__icon">
         <img src="{% static './portal/assets/icons/search.svg' %}" alt="search" />
       </div>
@@ -23,7 +23,9 @@
       </a>
     </div>
     <div class="navbar-notifications">
-      <a href="#"><img src="{% static './portal/assets/icons/notifications.svg' %}" alt="notifications" /></a>
+      <a href="#" class="navbar-notifications__link">
+        <img src="{% static './portal/assets/icons/notifications.svg' %}" alt="notifications" />
+      </a>
     </div>
     <div class="navbar-profile">
       <a href="#" class="navbar-profile__link">
