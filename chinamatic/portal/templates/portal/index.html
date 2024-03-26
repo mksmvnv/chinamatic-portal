@@ -7,12 +7,16 @@ Chinamatic — все о Китая и даже больше
 {% endblock title %}
 
 {% block content %}
-<h1>Posts</h1>
-<ul>
-    {% for post in posts %}
-    <li><h2>{{ post.title }}</h2></li>
-    <p>{{ post.description }}</p>
-    <a href="{% url 'post' post.id %}">Читать пост</a>
-    {% endfor %}
-</ul>
+<aside class="aside-left">
+    <div class="vertical-navigation">
+        <ul class="vertical-navigation__list">
+            <li class="vertical-navigation__list-item"><a href="#">Горячее</a></li>
+            <li class="vertical-navigation__list-item"><a href="#">Свежее</a></li>
+            <li class="vertical-navigation__list-item"><a href="#">Моя лента</a></li>
+            <li class="vertical-navigation__list-item"><a href="#">История</a></li>
+            <li class="vertical-navigation__list-item"><a href="#">Материалы</a></li>
+            <li class="vertical-navigation__list-item"><a href="#">Тесты</a></li>
+        </ul>
+    </div>
+</aside>
 {% endblock content %}
