@@ -160,6 +160,32 @@ html, body {
     color: var(--text-dark);
 }
 
+/* ASIDE */
+
+.aside-left {
+    width: 410px;
+    padding: 30px;
+}
+
+.vertical-navigation__list {
+    list-style-type: none;
+}
+
+.vertical-navigation__list-item {
+    margin-bottom: 5px;
+}
+
+.vertical-navigation__list-item a{
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--text);
+}
+
+
+
+
+
 
 
 
